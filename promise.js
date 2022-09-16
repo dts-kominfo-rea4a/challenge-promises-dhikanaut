@@ -7,11 +7,11 @@ const promiseOutput = async (emosi) => {
   let countemosi = 0;
   
   TheaterIXX.map((values) => {
-    if (values.hasil == emosi) countemosi += 1;
+    if (values.hasil == emosi) countemosi++;
   });
   
   TheaterVGC.map((values) => {
-    if (values.hasil == emosi) countemosi += 1;
+    if (values.hasil == emosi) countemosi++;
   });
 
   return countemosi;
